@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!---------------------------------------------css--------------------------->
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/services.css">
+    <link rel="stylesheet" type="text/css" href="./css/responsive.css">
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.js"></script>
+
+
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+
+    <!-----------------------------------------------------navnar------------------------------------>
+
+    <section id="nev-bar">
+        <header>
+            <nav class="navbar">
+                <div class="max-width">
+                    <div class="logo"><a href="#">Asets<span>Furniture</span></a></div>
+                    <ul class="menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+
+                    <div class="menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </nav>
+
+
+            <section class="home" id="home">
+                <div class="max">
+                    <div class="home-content">
+                        <div class="service-image">
+                            <img class="img" style="height: 60vh;margin-top: 80px;margin-left: 35%; padding-right:20px;animation: slideInFromRight 1s ease-in;" src="images/services.png" alt="">
+                            <p style="margin-top: -22%; animation: slideInFromLeft 1s ease-in;">Furniture refers to movable objects intended to support </p>
+                            <p style="animation: slideInFromLeft 1s ease-in;">various human activities such as seating (e.g., chairs,</p>
+                            <p style="animation: slideInFromLeft 1s ease-in;"> stools, and sofas), eating (tables), and sleeping </p>
+                            <p style="animation: slideInFromLeft 1s ease-in;"> (e.g., beds). ... Furniture can be a product of design</p>
+                            <p style="animation: slideInFromLeft 1s ease-in;"> and is considered a form of decorative art.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+        </header>
+    </section>
+
+
+    <!------------------------------------Sofa------------------------------------------->
+    <section>
+        <!-- MAIN (Center website) -->
+        <div class="main" style="margin-top: 20%; padding: 0 0 10px;">
+            <div id="myBtnContainer">
+                <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                <button class="btn" onclick="filterSelection('Living')"> Sofa</button>
+                <button class="btn" onclick="filterSelection('kf')"> Kitchin Furniture</button>
+                <button class="btn" onclick="filterSelection('bd')"> Bed room</button>
+                <button class="btn" onclick="filterSelection('dt')"> Dining Table</button>
+                <button class="btn" onclick="filterSelection('tc')"> T.V case</button>
+            </div>
+
+            <!-- Portfolio Gallery Grid -->
+            <div class="row">
+                <div class="column Living">
+                    <div class="content">
+                        <img src="images/sofa1.png" alt="living" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+
+                    </div>
+                </div>
+                <div class="column Living">
+                    <div class="content">
+                        <img src="images/sofa2.png" alt="living" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+
+
+                    </div>
+                </div>
+                <div class="column Living">
+                    <div class="content">
+                        <img src="images/sofa8.png" alt="living" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+
+                    </div>
+                </div>
+                <div class="column Living">
+                    <div class="content">
+                        <img src="images/sofa7.png" alt="living" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+
+                    </div>
+                </div>
+
+
+                <!---------------------------------------------------------------------------------->
+
+                <div class="column kf">
+                    <div class="content">
+                        <img src="images/kf1.jpg" alt="kf" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+
+
+                    </div>
+                </div>
+                <div class="column kf">
+                    <div class="content">
+                        <img src="images/kf2.jpg" alt="kf" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+
+
+                    </div>
+                </div>
+                <div class="column kf">
+                    <div class="content">
+                        <img src="images/kf4.jpg" alt="kf" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+
+
+                    </div>
+                </div>
+                <div class="column kf">
+                    <div class="content">
+                        <img src="images/kf6.jpg" alt="kf" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+
+
+                    </div>
+                </div>
+                <div class="column kf">
+                    <div class="content">
+                        <img src="images/kf5.jpg" alt="kf" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+
+
+                    </div>
+                </div>
+
+                <!---------------------------------------------------------------------------------->
+
+                <div class="column bd">
+                    <div class="content">
+                        <img src="images/badroomF1.jpg" alt="bd" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+
+
+                    </div>
+                </div>
+                <div class="column bd">
+                    <div class="content">
+                        <img src="images/badroomF2.jpg" alt="bd" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+
+                    </div>
+                </div>
+                <div class="column bd">
+                    <div class="content">
+                        <img src="images//badrromF4.jpg" alt="bd" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+
+                    </div>
+                </div>
+
+                <!---------------------------------------------------------------------------------->
+
+                <div class="column dt">
+                    <div class="content">
+                        <img src="images/di1.jpg" alt="de" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+
+
+                    </div>
+                </div>
+                <div class="column dt">
+                    <div class="content">
+                        <img src="images/di2.jpg" alt="de" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+
+                    </div>
+                </div>
+                <div class="column dt">
+                    <div class="content">
+                        <img src="images/di4.jpg" alt="dt" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+
+                    </div>
+                </div>
+
+                <!---------------------------------------------------------------------------------->
+
+                <div class="column tc">
+                    <div class="content">
+                        <img src="images/tv1png.png" alt="tc" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+
+
+                    </div>
+                </div>
+                <div class="column tc">
+                    <div class="content">
+                        <img src="images/tv2.png" alt="tc" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+
+
+                    </div>
+                </div>
+                <div class="column tc">
+                    <div class="content">
+                        <img src="images/tv4.jpg" alt="tc" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+
+                    </div>
+                </div>
+                <!-- END GRID -->
+            </div>
+
+            <!-- END MAIN -->
+        </div>
+    </section>
+
+
+
+    <!---------------------------------------Footer-------------------------------->
+
+    <section style="padding: 25px;" id="contect">
+        <div class="footer" style="background-color: whitesmoke;  ">
+            <div class="logo-2" style="font-size: 30px;color: brown; text-align: center;"><a href="#">Asets<span>Furniture</span></a></div>
+            <div class="box" style="display: flex; ">
+                <div class="deatil" style="margin-left: 10%;">
+                    <h3 style="margin-left: 8px;">Addres</h3>
+
+                    <h4><i style="color: rgb(250, 11, 11);" class="fas fa-map-marker" aria-hidden="true"></i> - 199/2, SR Campound Lasudiya Mori</h4>
+                    <h4>Dewas naka Indore(M.P)</h4>
+
+                </div>
+
+                <div class="deatil2" style="margin-left:20%;">
+                    <h4>Contact - <i style="color: rgb(35, 35, 148);" class="fas fa-phone" aria-hidden="true"></i> +91051546546</h4>
+                    <h4>Email - <i style="color:  rgb(35, 35, 148);" class="fas fa-envelope-open" aria-hidden="true"></i> example@gmail.com</h4>
+
+                    <div class="social">
+                        <a href=""><i style="color: blue;" class="fab fa-facebook-square"></i></a>
+                        <a href=""><i style="color: red;" class="fab fa-instagram"></i></a>
+                        <a href=""><i style="color: brown;" class="far fa-envelope"></i></a>
+                        <a href="https://web.whatsapp.com/"><i style="color: green;" class="fab fa-whatsapp"></i></a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <script src=" js/app.js "></script>
+    <script>
+    </script>
+
+
+
+
+</body>
+
+</html>

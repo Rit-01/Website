@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!---------------------------------------------css--------------------------->
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.js"></script>
+
+
+
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+
+    <!-----------------------------------------------------navnar------------------------------------>
+
+    <section id="nev-bar">
+        <header>
+            <nav class="navbar">
+                <div class="max-width">
+                    <div class="logo"><a href="#">Asets<span>Furniture</span></a></div>
+                    <ul class="menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#ab">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+
+                    <div class="menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </nav>
+
+        </header>
+    </section>
+
+
+    <!---------------------------------------------homePage--------------------------------->
+
+    <section class="home" id="home">
+        <div class="max">
+            <div class="home-content">
+                <div class="home-image">
+                    <img style="width: 100%; height: 80vh;" src="images/home1.jpg" alt="">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+    <!-------------------------------------------About----------------------------------->
+
+    <section id="ab">
+
+        <h2 style="text-align: center; margin-top: 20px;">About</h2>
+        <div class="ab" style="display: flex; padding: 20px;">
+            <div class="about" style="animation: slideInFromLeft 1s ease-in;">
+                <img src="images/sofa8.png" alt="" style="height: 400px; width: 650px; padding: 20px;">
+            </div>
+
+            <div class="about-text" style="width: 500px;margin-top: 100px; animation: slideInFromRight 1s ease-in;">
+                <p>INTRODUCING</p>
+                <p>WORK FROM HOME, THE NEW NORMAL Pepperfry offers an amazing work from home furniture collection. You will find work desks, some of the best ergonomic chairs, laptop tables, study tables to make a mini office in your home. So, which one
+                    are you looking at?</p>
+                </p>
+                <button class="btn1">Explore</button>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <!---------------------------------------------menu------------------------------------------>
+
+    <section class="servces" id="services" style="padding: 20px;">
+        <div class="max-width2">
+            <h2 style="text-align: center;">Our Furniture Services</h2>
+
+            <nav class="navbar-2">
+                <ul class="menu">
+                    <li><a href="#LR">Living Room</a></li>
+                    <li><a href="#BR">Bad Room</a></li>
+                    <li><a href="#KF">furniture kitchen</a></li>
+                </ul>
+            </nav>
+        </div>
+        <section id="LR">
+            <div class="w3-row-padding">
+                <h3 style="text-align: center;" style="padding: 5px;">Living Room</h3>
+                <div class="w3-container w3-third">
+                    <img src="images/livingroom1.jpg" style="width:100%;cursor:pointer; height: 258px;" onclick="onClick(this)" class="w3-hover-opacity">
+
+                </div>
+                <div class="w3-container w3-third">
+                    <img src="images/livingroom2.jpg" style="width:100%;cursor:pointer; height: 258px;" onclick="onClick(this)" class="w3-hover-opacity">
+                </div>
+                <div class="w3-container w3-third">
+                    <img src="images/livimgroom3.jpg" style="width:100%;cursor:pointer;height: 258px;" onclick="onClick(this)" class="w3-hover-opacity">
+                </div>
+            </div>
+
+            <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+                <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                <div class="w3-modal-content w3-animate-zoom">
+                    <img id="img01" style="width:100%">
+                </div>
+            </div>
+        </section>
+
+        <section id="BR">
+            <div class="w3-row-padding">
+                <h3 style="text-align: center;" style="padding: 5px;">Bad Room</h3>
+                <div class="w3-container w3-third">
+                    <img src="images/badroomF2.jpg" style="width:100%;cursor:pointer; height: 258px;" onclick="onClick(this)" class="w3-hover-opacity">
+                </div>
+                <div class="w3-container w3-third">
+                    <img src="images/badrromF3.jpg" style="width:100%;cursor:pointer;height: 258px;" onclick="onClick(this)" class="w3-hover-opacity">
+                </div>
+                <div class="w3-container w3-third">
+                    <img src="images/badrromF4.jpg" style="width:100%;cursor:pointer;height: 258px;" onclick="onClick(this)" class="w3-hover-opacity">
+                </div>
+            </div>
+
+            <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+                <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                <div class="w3-modal-content w3-animate-zoom">
+                    <img id="img01" style="width:100%">
+                </div>
+            </div>
+        </section>
+
+        <section id="KF">
+            <div class="w3-row-padding">
+                <h3 style="text-align: center;" style="padding: 5px;">Kitchin Furnture</h3>
+                <div class="w3-container w3-third">
+                    <img src="images/kf1.jpg" style="width:100%;cursor:pointer; height: 258px;" onclick="onClick(this)" class="w3-hover-opacity">
+                </div>
+                <div class="w3-container w3-third">
+                    <img src="images/kf3.jpeg" style="width:100%;cursor:pointer;height: 258px;" onclick="onClick(this)" class="w3-hover-opacity">
+                </div>
+                <div class="w3-container w3-third">
+                    <img src="images/kf6.jpg" style="width:100%;cursor:pointer;height: 258px;" onclick="onClick(this)" class="w3-hover-opacity">
+                </div>
+            </div>
+
+            <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+                <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                <div class="w3-modal-content w3-animate-zoom">
+                    <img id="img01" style="width:100%">
+                </div>
+            </div>
+        </section>
+
+        <script>
+            function onClick(element) {
+                document.getElementById("img01").src = element.src;
+                document.getElementById("modal01").style.display = "block";
+
+            }
+        </script>
+
+    </section>
+    <hr>
+
+    <!--------------------------------------------------About-------------------------------------------------------------->
+
+    <section>
+        <div class="middle" style="padding: 20px; margin-top: -20px;;">
+            <h1 style="text-align:center;font-weight: 300;">Coustumers </h1>
+            <div class="counting-sec" style="margin-top: 10px;">
+                <div class="inner-width" style="height: 100px;">
+                    <div class="col">
+                        <i class="far fa-smile-wink" aria-hidden="true"></i>
+                        <div class="num">1452</div>
+                        <h4 style="color: black;"> Happy Coustumer </h4>
+                    </div>
+
+                    <div class="col">
+                        <i class="fas fa-briefcase" aria-hidden="true"></i>
+                        <div class="num">20</div>
+                        <h4 style="color: black;">Services </h4>
+                    </div>
+
+                    <div class="col">
+                        <i class="far fa-money-bill-alt" aria-hidden="true"></i>
+                        <div class="num">1800+</div>
+                        <h4 style="color: black;">Sells</h4>
+                    </div>
+
+                    <div class="col">
+                        <i class="far fa-object-group" aria-hidden="true"></i>
+                        <div class="num">1452</div>
+                        <h4 style="color: black;">Templates</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <hr>
+    <!--------------------------------------------form----------------------------->
+
+
+    <section>
+        <div class="form-style-6">
+            <h1 style="margin-top: -70px;">Contact Us</h1>
+            <form>
+                <input type="text" name="field1" placeholder="Your Name" />
+                <input type="email" name="field2" placeholder="Email Address" />
+                <textarea name="field3" placeholder="Type your Message"></textarea>
+                <input type="submit" value="Send" />
+            </form>
+        </div>
+    </section>
+
+
+
+
+    <!---------------------------------------Footer-------------------------------->
+
+    <section style="padding: 25px;" id="contact">
+        <div class="footer" style="background-color: whitesmoke;  ">
+            <div class="logo-2" style="font-size: 30px;color: brown; text-align: center;"><a href="#">Asets<span>Furniture</span></a></div>
+            <div class="box" style="display: flex; ">
+                <div class="deatil" style="margin-left: 10%;">
+                    <h3 style="margin-left: 8px;">Addres</h3>
+
+                    <h4><i style="color: rgb(250, 11, 11);" class="fas fa-map-marker" aria-hidden="true"></i> - 199/2, SR Campound Lasudiya Mori</h4>
+                    <h4>Dewas naka Indore(M.P)</h4>
+
+                </div>
+
+                <div class="deatil2" style="margin-left:20%;">
+                    <h4>Contact - <i style="color: rgb(35, 35, 148);" class="fas fa-phone" aria-hidden="true"></i> +91051546546</h4>
+                    <h4>Email - <i style="color:  rgb(35, 35, 148);" class="fas fa-envelope-open" aria-hidden="true"></i> example@gmail.com</h4>
+
+                    <div class="social">
+                        <a href=""><i style="color: blue;" class="fab fa-facebook-square"></i></a>
+                        <a href=""><i style="color: red;" class="fab fa-instagram"></i></a>
+                        <a href=""><i style="color: brown;" class="far fa-envelope"></i></a>
+                        <a href="https://web.whatsapp.com/"><i style="color: green;" class="fab fa-whatsapp"></i></a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <script src=" js/app.js "></script>
+    <script>
+        $(".num ").counterUp();
+    </script>
+
+
+</body>
+
+</html>

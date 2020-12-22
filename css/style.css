@@ -1,0 +1,392 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    padding: 15px 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.navbar.sticky {
+    padding: 15px 0;
+    background: rgba(196, 174, 165, 0.938);
+}
+
+.max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a {
+    font-size: 25px;
+    color: brown;
+    font-style: italic;
+    font-display: bold;
+}
+
+.navbar .menu li {
+    margin-left: 20px;
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+.navbar .menu li a {
+    color: black;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover {
+    color: brown;
+    text-decoration: underline;
+}
+
+
+/*-----------------------------------------------------------nevbar2-----------------------------*/
+
+.navbar-2 {
+    margin-top: 8px;
+    width: 100%;
+    padding: 5px 0;
+    font-family: 'Ubuntu', sans-serif;
+    background: whitesmoke;
+    text-align: center;
+}
+
+.max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.navbar-2 .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-2 .menu li {
+    margin-left: 20px;
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+.navbar-2 .menu li a {
+    color: black;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.navbar-2 .menu li a:hover {
+    color: brown;
+    text-decoration: underline;
+}
+
+
+/*----------menubtn style---------*/
+
+.menu-btn {
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+
+/*----------contant services---------*/
+
+.contant-services .h2 {
+    margin-top: 50px;
+}
+
+
+/*---------------about-----------------*/
+
+.middle {
+    top: 40px;
+}
+
+.counting-sec {
+    padding: 60px 0;
+    width: 100%;
+    background: whitesmoke;
+}
+
+.inner-width {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+}
+
+.col {
+    flex: 1;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+}
+
+.col i {
+    font-size: 30px;
+    color: black;
+}
+
+.num {
+    font-size: 30px;
+    margin: 20px 0;
+    color: black;
+}
+
+.inner-width .col.h4 {
+    font-size: 18px;
+}
+
+
+/*-------------------contect form-----------------------*/
+
+
+/*-------responsive media query------------- */
+
+@media(max-width:700px) {
+    .max-width {
+        padding: 0 50px;
+    }
+    .menu-btn {
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active:before {
+        content: "\f00d";
+    }
+    .navbar {
+        height: 60px;
+    }
+    .navbar .menu li {
+        margin-left: 20px;
+        list-style: none;
+        display: inline-block;
+        padding: 10px;
+    }
+    .navbar .menu {
+        padding: 15px 0;
+        margin-top: 55px;
+        position: fixed;
+        height: 55vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: rgba(187, 158, 147, 0.808);
+        text-align: center;
+        padding-top: 50px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active {
+        left: 0;
+    }
+    .navbar .menu li {
+        display: block;
+    }
+    .navbar .menu li a {
+        display: inline-block;
+        margin: 15px 0;
+        font: 18px;
+    }
+    .inner-width {
+        display: block;
+    }
+    .counting-sec {
+        padding: 60px 0;
+        width: 100%;
+        background: whitesmoke;
+        height: 700px;
+    }
+    .box {
+        display: inline-block;
+    }
+}
+
+.explore-icon {
+    text-align: center;
+    margin-top: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+.explore-icon .explore-content {
+    text-align: center;
+    padding: 20px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.explore-icon .explore-content i {
+    text-align: center;
+    font-size: 50px;
+}
+
+.explore-icon .explore-content i:hover {
+    color: rgb(172, 119, 119);
+}
+
+.social i {
+    font-size: 25px;
+    margin: 16px;
+    cursor: pointer;
+}
+
+.column1 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 400px;
+    /* Should be removed. Only for demonstration */
+}
+
+
+/* Clear floats after the columns */
+
+.row1:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.form-style-6 {
+    max-width: 100%;
+    margin: 10px auto;
+    padding: 100px;
+    background: #F7F7F7;
+}
+
+.form-style-6 h1 {
+    font-weight: 300;
+    text-align: center;
+    color: black;
+}
+
+.form-style-6 input[type="text"],
+.form-style-6 input[type="date"],
+.form-style-6 input[type="datetime"],
+.form-style-6 input[type="email"],
+.form-style-6 input[type="number"],
+.form-style-6 input[type="search"],
+.form-style-6 input[type="time"],
+.form-style-6 input[type="url"],
+.form-style-6 textarea,
+.form-style-6 select {
+    margin-left: 25%;
+    outline: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 50%;
+    background: #fff;
+    margin-bottom: 2%;
+    border: 1px solid #ccc;
+    padding: 1%;
+    color: #555;
+    font: 95% Arial, Helvetica, sans-serif;
+}
+
+.form-style-6 input[type="text"]:focus,
+.form-style-6 input[type="date"]:focus,
+.form-style-6 input[type="datetime"]:focus,
+.form-style-6 input[type="email"]:focus,
+.form-style-6 input[type="number"]:focus,
+.form-style-6 input[type="search"]:focus,
+.form-style-6 input[type="time"]:focus,
+.form-style-6 input[type="url"]:focus,
+.form-style-6 textarea:focus,
+.form-style-6 select:focus {
+    box-shadow: 0 0 5px rgba(196, 174, 165, 0.938);
+    padding: 3%;
+    border: 1px solidrgba(196, 174, 165, 0.938);
+}
+
+.form-style-6 input[type="submit"],
+.form-style-6 input[type="button"] {
+    margin-left: 25%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 50%;
+    padding: 1.5%;
+    background: rgba(196, 174, 165, 0.938);
+    border-bottom: 2px solid rgba(196, 174, 165, 0.938);
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    color: #fff;
+}
+
+.form-style-6 input[type="submit"]:hover,
+.form-style-6 input[type="button"]:hover {
+    background: #2EBC99;
+}
+
+.ab .btn1 {
+    background: none;
+    margin-top: 25px;
+    height: 50px;
+    width: 100px;
+}
+
+.ab .btn1:hover {
+    background: #2EBC99;
+    color: #555;
+}
+
+
+/*------------------------------------Animations----------------------------*/
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.living .kf .bd .dt.tc {
+    animation: slideInFromBottom 1s ease-in;
+}
