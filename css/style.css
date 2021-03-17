@@ -5,6 +5,14 @@
     text-decoration: none;
 }
 
+html, body {
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+/* NavBar */
 .navbar {
     position: fixed;
     width: 100%;
@@ -12,9 +20,9 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
-.navbar.sticky {
-    padding: 15px 0;
-    background: rgba(196, 174, 165, 0.938);
+.navbar .container {
+    max-width: 1300px;
+    justify-content: space-between;
 }
 
 .max-width {
@@ -114,43 +122,50 @@
 
 
 /*---------------about-----------------*/
-
-.middle {
-    top: 40px;
+.about-sec .flex { 
+    justify-content: center;
+    align-items: center;
 }
 
-.counting-sec {
-    padding: 60px 0;
-    width: 100%;
-    background: whitesmoke;
+.about-sec img {
+    max-width: 70vh;
+    height: 40vh;
+    padding: 20px;
 }
 
-.inner-width {
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
+.about-content {
+    max-width: 500px;
+    animation: slideInFromRight 1s ease-in;
 }
 
-.col {
-    flex: 1;
-    text-align: center;
-    text-transform: uppercase;
-    color: rgb(255, 255, 255);
-}
-
-.col i {
-    font-size: 30px;
-    color: black;
-}
-
-.num {
-    font-size: 30px;
+.about-content .about-btn {
+    background: #000;
+    color: #fff;
     margin: 20px 0;
-    color: black;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    transition: padding 0.3s ease-in;
 }
 
-.inner-width .col.h4 {
-    font-size: 18px;
+.about-img-container { animation: slideInFromLeft 1s ease-in; }
+
+/* Stats Section */
+.stats {
+    padding: 60px inherit;
+    background: whitesmoke;
+    padding: 10px 0 20px 0;
+}
+
+.container {
+    justify-content: center;
+}
+
+.stats-card {
+    max-width: 200px;
+    margin: 20px 40px;
+    text-align: center;
+    font-size: 2em;
 }
 
 

@@ -1,0 +1,25 @@
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
+    overflow: hidden;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid { display: grid;}
+
+.grid-4 { grid-template-columns: repeat(4, 1fr);}
+@media (max-width: 800px){
+    .grid-4 { grid-template-columns: repeat(2, 1fr);}    
+}
+@media (max-width: 400px){
+    .grid-4 { grid-template-columns: repeat(1, 1fr);}    
+}
+
+
+.text-center { text-align: center; }
+

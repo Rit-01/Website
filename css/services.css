@@ -14,8 +14,22 @@ body {
 }
 
 
-/* Center website */
+/* Service Showcase Section */
 
+.service-showcase .container{
+    justify-content: center;
+    align-items: center;
+    margin: 10vh auto;
+}
+
+.service-showcase img { 
+    height: 45vh; 
+    max-width: 100%;
+}
+
+.service-showcase p { max-width: 45vh; }
+
+/* Center website */
 .main {
     max-width: 1000px;
     margin: auto;

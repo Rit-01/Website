@@ -9,7 +9,7 @@
     <!---------------------------------------------css--------------------------->
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="stylesheet" type="text/css" href="./css/services.css">
-    <link rel="stylesheet" type="text/css" href="./css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="./css/utilities.css">
 
 
 
@@ -27,50 +27,43 @@
 
     <!-----------------------------------------------------navnar------------------------------------>
 
-    <section id="nev-bar">
-        <header>
-            <nav class="navbar">
-                <div class="max-width">
-                    <div class="logo"><a href="#">Asets<span>Furniture</span></a></div>
-                    <ul class="menu">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
+    <header class="navbar" id="nev-bar">
+        <div class="container flex">
+            <div class="logo"><a href="#">Asets<span>Furniture</span></a></div>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#ab">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
 
-                    <div class="menu-btn">
-                        <i class="fas fa-bars"></i>
-                    </div>
-                </div>
-            </nav>
-
-
-            <section class="home" id="home">
-                <div class="max">
-                    <div class="home-content">
-                        <div class="service-image">
-                            <img class="img" style="height: 60vh;margin-top: 80px;margin-left: 35%; padding-right:20px;animation: slideInFromRight 1s ease-in;" src="images/services.png" alt="">
-                            <p style="margin-top: -22%; animation: slideInFromLeft 1s ease-in;">Furniture refers to movable objects intended to support </p>
-                            <p style="animation: slideInFromLeft 1s ease-in;">various human activities such as seating (e.g., chairs,</p>
-                            <p style="animation: slideInFromLeft 1s ease-in;"> stools, and sofas), eating (tables), and sleeping </p>
-                            <p style="animation: slideInFromLeft 1s ease-in;"> (e.g., beds). ... Furniture can be a product of design</p>
-                            <p style="animation: slideInFromLeft 1s ease-in;"> and is considered a form of decorative art.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-
-
-        </header>
+    <!-- Service ShowCase Section -->
+    <section class="service-showcase">
+        <div class="container flex">
+            <div class="showcase-content">
+                <p class="text-center">
+                    Furniture refers to movable objects intended to support
+                    various human activities such as seating (e.g., chairs,
+                    stools, and sofas), eating (tables), and sleeping
+                    (e.g., beds). ... Furniture can be a product of design
+                    and is considered a form of decorative art.
+                </p>
+            </div>
+            <div class="showcase-img">
+                <img src="images/services.png" alt="Service ShowCase Image">
+            </div>
+        </div>
     </section>
 
-
     <!------------------------------------Sofa------------------------------------------->
-    <section>
+    <section class="our-products">
         <!-- MAIN (Center website) -->
-        <div class="main" style="margin-top: 20%; padding: 0 0 10px;">
+        <div class="main" style="padding: 0 0 10px;">
             <div id="myBtnContainer">
                 <button class="btn active" onclick="filterSelection('all')"> Show all</button>
                 <button class="btn" onclick="filterSelection('Living')"> Sofa</button>
